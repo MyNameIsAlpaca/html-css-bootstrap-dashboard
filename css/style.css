@@ -1,5 +1,47 @@
 nav .boolean-navbar {
     width: 100vw;
-    height: 50px;
+    height: 60px;
     background-color: #f8f9fa;
 }
+
+nav .boolean-navbar .search-bar-container .search-bar {
+    height: 85%;
+}
+
+
+.form{
+    position: relative;
+}
+
+.form .fa-search{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: #9ca3af;
+}
+
+.form-input{
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+nav .boolean-navbar .link {
+    display: flex;
+    gap: 20px;
+    font-size: 0.8em;
+}
+
+nav .boolean-navbar .link i:last-child {
+    color: #ff8f00;
+}
+
+aside .nav-aside {
+    width: 130px;
+    height: calc(100vh - 60px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+    color: white;
+}
+
+
