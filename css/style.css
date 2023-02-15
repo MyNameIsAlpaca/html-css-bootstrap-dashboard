@@ -1,7 +1,7 @@
 nav .boolean-navbar {
-    width: 100vw;
+    width: 100%;
     height: 60px;
-    background-color: #f8f9fa;
+    background-color: white;
 }
 
 nav .boolean-navbar .search-bar-container .search-bar {
@@ -36,12 +36,86 @@ nav .boolean-navbar .link i:last-child {
     color: #ff8f00;
 }
 
+nav .container-fluid .img-container-logo {
+    width: 60px;
+}
+
+
 aside .nav-aside {
     width: 130px;
     height: calc(100vh - 60px);
     background-image: url(../img/sidebar-bg.png);
     background-color: #051e34;
     color: white;
+}
+
+main {
+    display: flex;
+}
+
+main header{
+    background-color:#1b72e8 ;
+    color: white;
+    width: 100%;
+    height: 130px;
+}
+
+.header-left-section .breadcrumb {
+    gap: 10px;
+}
+
+.header-left-section .breadcrumb li:nth-child(2) {
+    background-color: transparent;
+}
+
+.header-left-section .breadcrumb li,
+header .container-fluid .title span {
+background-color: #165bba;
+border-radius: 10px;
+}
+
+.header-left-section .breadcrumb li a  {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 10px;
+
+}
+
+main header .header-right-section .btn-group {
+    border: 1px solid white;
+}
+
+main header .header-right-section .btn-group .btn {
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
+@media screen and (max-width:991px){
+    aside .nav-aside {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    main header {
+        height: 250px;
+    }
+
+    .header-left-section .breadcrumb {
+        margin: 0;
+    }
+
+    
+    .header-left-section .title span,
+    .header-left-section .title li,
+    .header-mid-section .row .col h5,
+    .header-right-section .d-flex h5{
+        font-size: 1em;
+    }
+
+
 }
 
 

@@ -15,8 +15,11 @@
 
     <nav>
         <div class="container-fluid boolean-navbar d-flex justify-content-between align-items-center">
-            <div class="img-container-logo">
-                <img src="img/logo.svg" alt="logo boolean">
+            <div class="img-container">
+                <div class="img-container-logo">
+                    <img src="img/mobile-logo.png" class="img-fluid d-lg-none" alt="logo boolean">
+                </div>
+                <img src="img/logo.svg" class="d-none d-lg-block" alt="logo boolean">
             </div>
             <div class="search-bar-container flex-grow-1 px-3">
                 <div class="form search-bar">
@@ -25,58 +28,100 @@
                 </div>
             </div>
             <div class="link">
-                <i class="fa-solid fa-list-ul"></i>
-                <i class="fa-solid fa-question"></i>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-list-ul d-none d-lg-block"></i>
+                <i class="fa-solid fa-question d-none d-lg-block"></i>
+                <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
                 <i class="fa-solid fa-bell"></i>
             </div>
         </div>
     </nav>
 
     <!-- /navbar -->
-
+    
     <!-- main -->
-
+    
     <main>
-
-    </main>
-
-    <!-- /main -->
-
-    <!-- aside -->
-
-    <aside>
-        <div class="nav-aside">
-            <div class="container-fluid nav-aside d-flex flex-column justify-content-between">
-                <ul class="list-unstyled">
-                    <li class="pt-3">
-                        <i class="pe-2 fa-solid fa-house"></i>
-                        <span>Home</span>
-                    </li>
-                    <li class="pt-3">
-                        <i class="pe-2 fa-solid fa-chart-simple"></i>
-                        <span>Stats</span>
-                    </li>
-                    <li class="pt-3">
-                        <i class="pe-2 fa-solid fa-signal"></i>
-                        <span>Signals</span>
-                    </li>
-                </ul>
-                <div class="admin pb-3">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Admin</span>
+        
+        <!-- aside -->
+        
+        <aside>
+            <div class="nav-aside">
+                <div class="container-fluid nav-aside d-flex flex-column justify-content-between">
+                    <ul class="list-unstyled">
+                        <li class="pt-3">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-lg-inline-block d-none">Home</span>
+                        </li>
+                        <li class="pt-3">
+                            <i class=" fa-solid fa-chart-simple"></i>
+                            <span class="d-lg-inline-block d-none">Stats</span>
+                        </li>
+                        <li class="pt-3">
+                            <i class=" fa-solid fa-signal"></i>
+                            <span class="d-lg-inline-block d-none">Signals</span>
+                        </li>
+                    </ul>
+                    <div class="admin d-flex pb-3 justify-content-center d-lg-block">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-lg-inline-block d-none">Admin</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </aside>
+        </aside>
+        
+        <!-- /aside -->
+        
+        <!-- header -->
 
-    <!-- /aside -->
+        <header>
+            <div class="container-fluid">
+                <div class=" d-flex justify-content-between py-3 px-0 flex-column flex-sm-row">
+                    <div class="header-left-section pe-2 order-1 order-sm-0">
+                        <div class="title d-flex">
+                            <h1>Boolean</h1>
+                            <span class="align-self-center ms-3 fs-6">Piano blaze</span>
+                        </div>
+                        <ul class="breadcrumb pb-4">
+                            <li><a href="#">3 App</a></li>
+                            <li>&raquo;</li>
+                            <li class="d-block d-lg-none"><a href="#">+</a></li>
+                            <li class="d-none d-lg-block"><a href="#">Boolean mobile app</a></li>
+                            <li class="d-none d-lg-block"><a href="#">Boolean web app</a></li>
+                            <li class="d-none d-lg-block"><a href="#">Boolean blog app</a></li>
+                          </ul>
+                    </div>
+                    <div class="header-mid-section pe-2 order-1 order-sm-1">
+                        <div class="row d-flex flex-column">
+                            <div class="col"><h5>Studenti online negli ultimi 30 minuti</h5></div>
+                            <div class="col"><h2>125</h2></div>
+                        </div>
+                    </div>
+                    <div class="header-right-section order-sm-2">
+                        <div class="d-flex">
+                            <div class="pe-2 pt-1"><h5>Nuovo studente</h5></div>
+                            <div class="p-0"><div class="btn-group">
+                                <button type="button" class="btn btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  +
+                                </button>
+                              </div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- /header -->
+        
+        
+        
+        
+    </main>
     
-
-
-
-
-
+    <!-- /main -->
+    
+    
+    
+    
 
 
     <!-- bootstrap -->
