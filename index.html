@@ -116,28 +116,69 @@
                                     <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
                                       +
                                     </button>
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="addstudent">
+                                    <div class="offcanvas offcanvas-end offcanvas-size" tabindex="-1" id="offcanvasExample" aria-labelledby="addstudent">
                                         <div class="offcanvas-header">
                                           <h5 class="offcanvas-title" id="addstudent">Inserisci nuovo studente</h5>
                                           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                         </div>
-                                        <div class="offcanvas-body">
-                                            <form>
-                                                <div class="form-row align-items-center">
-                                                  <div class="col-auto">
-                                                    <label class="sr-only" for="inlineFormInput">Name</label>
-                                                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                                        <div class="offcanvas-body offcanvas-size">
+                                            <div class="row flex-column flex-md-row">
+                                                <div class="col-md-6 col-12">
+                                                    <label for="inputname" class="form-label">Nome</label>
+                                                    <input type="name" class="form-control" id="inputname" required="">
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <label for="inputname" class="form-label">Cognome</label>
+                                                    <input type="name" class="form-control" id="inputname" required="">
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <label class="form-label">Email</label>
+                                                    <div class="input-group has-validation">
+                                                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                                    </div>                                                
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <label for="password" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputname" required="">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="address" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="inputname" required="">
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <label for="city" class="form-label">Città</label>
+                                                    <input type="text" class="form-control" id="inputname" required="">
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <label for="state" class="form-label">Stato</label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Scegli</option>
+                                                        <option value="1">Italia</option>
+                                                        <option value="2">Ammmmurrica</option>
+                                                        <option value="3">Canada</option>
+                                                        <option value="3">Napoli</option>
+                                                      </select>
+                                                </div>
+                                                <div class="col-md-2 col-12">
+                                                    <label for="cap" class="form-label">Cap</label>
+                                                    <input type="text" class="form-control" id="inputname" required="">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label" for="customFile">Foto</label>
+                                                    <input type="file" class="form-control" id="customFile" />
+                                                </div>
+                                                <div class="col-4 pt-3">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
                                                   </div>
-                                                  <div class="col-auto">
-                                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                                                    <div class="input-group mb-2">
-                                                      <div class="input-group-prepend">
-                                                        <div class="input-group-text">@</div>
-                                                      </div>
-                                                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                                                    </div>
-                                                  </div>
-                                              </form>  
+                                            </div>
+                                            <div class="row justify-content-start">
+                                                <div class="col pt-2">
+                                                    <button type="button" class="btn btn-primary btn-sm">Salva</button>
+                                                    <button type="button" class="btn btn-warning btn-sm">Svuota</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
