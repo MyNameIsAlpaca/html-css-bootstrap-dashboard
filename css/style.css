@@ -34,8 +34,9 @@ nav .boolean-navbar .link {
     font-size: 0.8em;
 }
 
-nav .boolean-navbar .link i:last-child {
+nav .boolean-navbar .link .bell {
     color: #ff8f00;
+    display: block;
 }
 
 nav .container-fluid .img-container-logo {
