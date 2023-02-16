@@ -37,6 +37,7 @@ nav .boolean-navbar .link {
 nav .boolean-navbar .link .bell {
     color: #ff8f00;
     display: block;
+    cursor: pointer;
 }
 
 nav .container-fluid .img-container-logo {
@@ -118,12 +119,17 @@ main .main-container {
     border-radius: 25%;
 }
 
-.offcanvas-size{
-    width: 800px !important;
+#offcanvas {
+    width: 50%;
 }
 
 .btn-small {
     font-size: 10px;
+}
+
+.interactive-background:hover {
+    cursor: pointer;
+    background-color: gray;
 }
 
 @media screen and (max-width:991px){
@@ -138,8 +144,8 @@ main .main-container {
         flex-direction: column;
     }
 
-    .offcanvas-size{
-        width: 100% !important;
+    #offcanvas{
+        width: 100%;
     }
 }
 
@@ -167,9 +173,6 @@ main .main-container {
     .class-table-row td:nth-child(3) {
         display: none;
     }
-
-    
-
 }
 
 
