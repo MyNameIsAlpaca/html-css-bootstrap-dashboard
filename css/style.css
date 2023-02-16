@@ -108,6 +108,10 @@ main .main-container {
     margin-left: 130px;
 }
 
+.card-container {
+    background-color: #f8f9fa;
+}
+
 .card-container .img-container {
     max-width: 25px;
 }
@@ -130,6 +134,10 @@ main .main-container {
 .interactive-background:hover {
     cursor: pointer;
     background-color: gray;
+}
+
+.class-table-row:hover{
+    background-color: #ececec;
 }
 
 @media screen and (max-width:991px){
