@@ -82,6 +82,9 @@ header .container-fluid .title span {
 background-color: #165bba;
 border-radius: 10px;
 }
+header .container-fluid .title span {
+    font-size: 0.7em;
+}
 
 .header-left-section .breadcrumb li a  {
     color: white;
@@ -107,7 +110,16 @@ main .main-container {
     margin-left: 130px;
 }
 
+.card-container .img-container {
+    max-width: 25px;
+}
 
+.class-button button {
+    background-color: white;
+    border: 1px solid #6c757d8e;
+    color: #6c757d;
+    border-radius: 25%;
+}
 
 @media screen and (max-width:991px){
     aside .nav-aside {
@@ -115,6 +127,10 @@ main .main-container {
     }
     main .main-container {
         margin-left: 50px;
+    }
+
+    .card-container .row {
+        flex-direction: column;
     }
 }
 

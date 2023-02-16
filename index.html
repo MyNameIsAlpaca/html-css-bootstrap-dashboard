@@ -83,7 +83,7 @@
                         <div class="header-left-section pe-2 order-1 order-sm-0">
                             <div class="title d-flex">
                                 <h1>Boolean</h1>
-                                <span class="align-self-center ms-3 fs-6">Piano blaze</span>
+                                <span class="align-self-center ms-3">Piano blaze</span>
                             </div>
                             <ul class="breadcrumb pb-4">
                                 <li><a href="#">3 App</a></li>
@@ -102,12 +102,38 @@
                         </div>
                         <div class="header-right-section order-sm-2">
                             <div class="d-flex">
-                                <div class="pe-2 pt-1"><h5>Nuovo studente</h5></div>
+                                <div class="pe-2 pt-1">
+                                    <h5>Nuovo studente</h5>
+                                </div>
                                 <div class="p-0"><div class="btn-group">
-                                    <button type="button" class="btn btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
                                       +
                                     </button>
-                                  </div></div>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="addstudent">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="addstudent">Inserisci nuovo studente</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                  <div class="col-auto">
+                                                    <label class="sr-only" for="inlineFormInput">Name</label>
+                                                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                                                  </div>
+                                                  <div class="col-auto">
+                                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                    <div class="input-group mb-2">
+                                                      <div class="input-group-prepend">
+                                                        <div class="input-group-text">@</div>
+                                                      </div>
+                                                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                                    </div>
+                                                  </div>
+                                              </form>  
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,49 +144,79 @@
 
             <!-- main body  -->
 
-            <div class="p-4">
+            <div class="card-container p-4">
                 <div class="row flex">
-                    <div class="col-8">
+                    <div class="col col-lg-8">
                         <div class="row flex-column">
                             <div class="col">
                                 <div class="card" style="">
                                     <div class="card-header">
                                       <h2>Prossime classi</h2>
                                     </div>
-                                    <table class="table">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Nome</th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col">ROI</th>
-                                            <th scope="col">Stato</th>
-                                            <th scope="col">Azioni</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th>Classe 75</th>
-                                            <td>15 febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td>Done</td>
-                                            <td>{}[]</td>
-                                          </tr>
-                                          <tr>
-                                            <th>Classe 75</th>
-                                            <td>15 febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td>Done</td>
-                                            <td>{}[]</td>
-                                          </tr>
-                                          <tr>
-                                            <th>Classe 75</th>
-                                            <td>15 febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td>Done</td>
-                                            <td>{}[]</td>
-                                          </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="container-fluid">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th class="col-6" scope="col">Nome</th>
+                                                <th class="col-1 text-center" scope="col">Data inizio</th>
+                                                <th class="col-1 text-center" scope="col">ROI</th>
+                                                <th class="col-1 text-center" scope="col">Stato</th>
+                                                <th class="col-1 text-center" scope="col">Azioni</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                    <div class="class-container d-flex">
+                                                        <div class="img-container">
+                                                            <img src="img/class-avatar.png" class="img-fluid" alt="immagine classe">
+                                                        </div>
+                                                        <span class="ps-1">Classe 75</span> 
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">15 feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center"><div class="badge bg-success">Done</div></td>
+                                                <td class="text-center class-button">
+                                                    <button>
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button>
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    <div class="class-container d-flex">
+                                                        <div class="img-container">
+                                                            <img src="img/class-avatar.png" class="img-fluid" alt="immagine classe">
+                                                        </div>
+                                                        <span class="ps-1">Classe 75</span> 
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">15 feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center">Done</td>
+                                                <td class="text-center">{}[]</td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    <div class="class-container d-flex">
+                                                        <div class="img-container">
+                                                            <img src="img/class-avatar.png" class="img-fluid" alt="immagine classe">
+                                                        </div>
+                                                        <span class="ps-1">Classe 75</span> 
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">15 feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center">Done</td>
+                                                <td class="text-center">{}[]</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col pt-4">
@@ -210,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col col-lg-4">
                         <div class="card" style="">
                             <div class="card-header">
                               <h2>Todo</h2>
@@ -233,11 +289,15 @@
                         <div class="col pt-4">
                             <div class="card" style="">
                                 <ul class="list-group">
-                                    <li class="list-group-item"><img src="img/stats.jpeg" class="img-fluid" alt=""></li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                    <li class="list-group-item">A fourth item</li>
-                                    <li class="list-group-item">And a fifth one</li>
+                                    <li class="list-group-item">
+                                        <img src="img/stats.jpeg" class="img-fluid" alt="">
+                                        <h5>Utenti attivi</h5>
+                                        <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                    </li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
                                 </ul>
                             </div>
                         </div>
